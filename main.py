@@ -4,10 +4,11 @@ from dotenv import load_dotenv
 load_dotenv()
 
 import telebot
-from handlers import start_handler, filter_duration_handler, message_handler
 
 TELEGRAM_TOKEN = os.getenv("TELEGRAM_TOKEN")
 bot = telebot.TeleBot(TELEGRAM_TOKEN)
+
+from handlers import start_handler, filter_duration_handler, message_handler
 
 bot.message_handler(commands=["start"])(start_handler)
 bot.message_handler(commands=["filter_duration"])(filter_duration_handler)
