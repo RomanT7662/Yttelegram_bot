@@ -1,0 +1,17 @@
+# IDE-specific files
+.idea/
+.vscode/
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Configuration files
+.env
+
+# Logs
+*.log
+
+# Virtual environments
+venv/
+env/
