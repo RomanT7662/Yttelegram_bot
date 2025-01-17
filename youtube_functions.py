@@ -57,7 +57,7 @@ def search_and_display_playlists(chat_id, query):
     num_playlists = 5
     playlists, _ = search_similar_playlists(query, num_playlists)
     if not playlists:
-        bot.send_message(chat_id, "По данному запросу ничего не найдено.")
+        bot.send_message(chat_id, "Nothing was found for this query.")
         return
 
     response = ""
